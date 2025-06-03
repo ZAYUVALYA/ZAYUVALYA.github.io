@@ -17,7 +17,7 @@ echo "╔═══════════════════════�
 echo "║                  Welcome to TERMINAI              ║"
 echo "║       Your personal AI chat in the terminal       ║"
 echo "║     Type your question and get instant answers     ║"
-echo "║           Type '${YELLOW}exit${CYAN}' to leave the chat              ║"
+echo "║           Type 'exit' to leave the chat              ║"
 echo "╠════════════════════════════════════════════════════╣"
 echo "║  Made by ZAYUVALYA:   https://zayuvalya.github.io  ║"
 echo "║  Powered by POLLINATIONS AI:                       ║"
