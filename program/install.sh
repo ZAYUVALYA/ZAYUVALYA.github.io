@@ -1,23 +1,36 @@
 #!/bin/bash
 
-echo -e "\033[1;36mInstalling ZAYUVALYA Terminal AI Chat...\033[0m"
+# ====== Colors ======
+NC='\033[0m'
+CYAN='\033[0;36m'
+YELLOW='\033[1;33m'
+GREEN='\033[0;32m'
+RED='\033[0;31m'
 
-# Step 1: Check & install jq
+echo -e "${CYAN}TERMINAI Installer${NC}"
+echo "------------------------------------------"
+
+# Check dependencies
+if ! command -v curl &> /dev/null; then
+  echo -e "${RED}Error: curl is not installed.${NC}"
+  echo -e "${YELLOW}Please install curl and try again.${NC}"
+  exit 1
+fi
+
 if ! command -v jq &> /dev/null; then
-  echo -e "\033[1;33mInstalling dependency: jq...\033[0m"
+  echo -e "${YELLOW}Installing required dependency: jq${NC}"
   sudo apt update && sudo apt install -y jq
 fi
 
-# Step 2: Download the zayuvalya script
-echo -e "\033[1;33mDownloading ZAYUVALYA script...\033[0m"
-wget -q https://raw.githubusercontent.com/ZAYUVALYA/ZAYUVALYA.github.io/main/program/zayuvalya -O ~/zayuvalya
+# Download Terminai.sh from GitHub
+echo -e "${CYAN}Downloading TERMINAI...${NC}"
+curl -sSLo terminai.sh https://raw.githubusercontent.com/ZAYUVALYA/ZAYUVALYA.github.io/main/program/Terminai.sh
 
-# Step 3: Make it executable
-chmod +x ~/zayuvalya
+# Make executable
+chmod +x terminai.sh
 
-# Step 4: Move to /usr/local/bin
-sudo mv ~/zayuvalya /usr/local/bin/zayuvalya
+# Move to bin
+sudo mv terminai.sh /usr/local/bin/terminai
 
-# Step 5: Done
-echo -e "\033[1;32mZAYUVALYA AI Chat has been installed!\033[0m"
-echo -e "\n\033[1;36mYou can now type '\033[1;33mzayuvalya\033[1;36m' in your terminal to start chatting with AI!\033[0m"
+echo -e "${GREEN}Installation complete!${NC}"
+echo -e "You can now start TERMINAI by typing: ${YELLOW}terminai${NC}"
