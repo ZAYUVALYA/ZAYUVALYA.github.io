@@ -14,13 +14,14 @@ USERNAME=$(whoami)
 # ====== Welcome Banner ======
 echo -e "${CYAN}"
 echo "╔════════════════════════════════════════════════════╗"
-echo "║              Welcome to ZAYUVALYA AI Chat          ║"
+echo "║                  Welcome to TERMINAI              ║"
+echo "║       Your personal AI chat in the terminal       ║"
 echo "║     Type your question and get instant answers     ║"
-echo "║          Type '${YELLOW}exit${CYAN}' to leave the chat              ║"
+echo "║           Type '${YELLOW}exit${CYAN}' to leave the chat              ║"
 echo "╠════════════════════════════════════════════════════╣"
-echo "║  Visit ZAYUVALYA:     https://zayuvalya.github.io  ║"
+echo "║  Made by ZAYUVALYA:   https://zayuvalya.github.io  ║"
 echo "║  Powered by POLLINATIONS AI:                       ║"
-echo "║       https://github.com/pollinations/pollinations ║"
+echo "║     https://github.com/pollinations/pollinations   ║"
 echo "╚════════════════════════════════════════════════════╝"
 echo -e "${NC}"
 
@@ -29,14 +30,14 @@ while true; do
   echo -ne "${CYAN}${USERNAME} > ${NC}"
   read input
   if [[ "$input" == "exit" ]]; then
-    echo -e "${YELLOW}Exiting... See you next time!${NC}"
+    echo -e "${YELLOW}Goodbye from TERMINAI!${NC}"
     break
   fi
 
   timestamp=$(date "+%H:%M:%S")
   encoded_input=$(echo "$input" | jq -sRr @uri)
 
-  echo -e "${GRAY}[${timestamp}] Thinking...${NC}"
+  echo -e "${GRAY}[${timestamp}] Contacting AI...${NC}"
   start_time=$(date +%s.%N)
 
   response=$(curl -s "https://text.pollinations.ai/prompt/${encoded_input}")
@@ -44,6 +45,6 @@ while true; do
   end_time=$(date +%s.%N)
   duration=$(echo "$end_time - $start_time" | bc)
 
-  echo -e "${GREEN}AI > $response${NC}"
+  echo -e "${GREEN}TERMINAI > $response${NC}"
   echo -e "${GRAY}[Response time: ${duration}s]${NC}\n"
 done
