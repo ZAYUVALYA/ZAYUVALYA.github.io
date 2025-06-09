@@ -1,36 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-  <url>
-    <loc>https://zayuvalya.github.io/</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>1.0</priority>
-  </url>
+    <!-- Halaman Utama -->
+    <url>
+        <loc>https://zayuvalya.github.io/</loc> 
+        <lastmod>2025-05-28</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
 
-  <url>
-    <loc>https://zayuvalya.github.io/AI-Text-Humanizer/</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <!-- Aplikasi Terbaru: IMAGE GENERATOR -->
+    <url>
+        <loc>https://zayuvalya.github.io/IMAGE-GENERATOR/</loc> 
+        <lastmod>2025-05-28</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://zayuvalya.github.io/LinguaGenie/</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <!-- Aplikasi Lain -->
+    <url>
+        <loc>https://zayuvalya.github.io/AI-Text-Humanizer/</loc> 
+        <lastmod>2025-05-27</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
 
-  <url>
-    <loc>https://zayuvalya.github.io/NextBIN-Cleaner/</loc>
-    <lastmod>2025-05-27</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
+    <url>
+        <loc>https://zayuvalya.github.io/LinguaGenie/</loc> 
+        <lastmod>2025-05-27</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://zayuvalya.github.io/NextBIN-Cleaner/</loc> 
+        <lastmod>2025-05-27</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.8</priority>
+    </url>
 
 </urlset>
