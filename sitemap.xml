@@ -5,23 +5,20 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
-    <!-- Halaman Utama -->
     <url>
         <loc>https://zayuvalya.github.io/</loc> 
         <lastmod>2025-05-28</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
-
-    <!-- Aplikasi Terbaru: IMAGE GENERATOR -->
+    
     <url>
-        <loc>https://zayuvalya.github.io/IMAGE-GENERATOR/</loc> 
+        <loc>https://zayuvalya.github.io/IMAGEN/</loc> 
         <lastmod>2025-05-28</lastmod>
         <changefreq>daily</changefreq>
         <priority>0.8</priority>
     </url>
 
-    <!-- Aplikasi Lain -->
     <url>
         <loc>https://zayuvalya.github.io/AI-Text-Humanizer/</loc> 
         <lastmod>2025-05-27</lastmod>
