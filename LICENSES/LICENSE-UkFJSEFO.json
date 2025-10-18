@@ -1,0 +1,6 @@
+{
+  "client": "client-abc",
+  "status": "pending",
+  "expires": "2025-12-12T00:00:00Z",
+  "note": "Pending until 2025-12-12"
+}
